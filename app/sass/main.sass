@@ -1,0 +1,794 @@
+@import "bourbon"
+@import "fonts"
+@import "libs"
+@import "vars"
+//	@import "media" // Всегда в конце
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	color: $grey
+a
+	text-decoration: underline
+	color: $green
+a:hover
+	text-decoration: none
+	color: #9fe54e
+
+h2
+	color: $grey
+	text-align: center
+	font-family: "Mon_thin", sans-serif
+	font-size: 24px
+h3
+	font-family: "Mon_light", sans-serif
+	color: $green
+	font-size: 24px
+	margin-bottom: 0
+h4
+	font-size: 24px
+	color: $teal
+	font-family: "Mon_light", sans-serif
+	margin-bottom: 15px
+	margin-top: 0
+h5
+	margin: 0
+	padding: 0
+	font-family: "Mon", sans-serif
+	font-weight: bold
+	font-size: 14px
+
+
+i
+	font-style: normal
+.my
+	font-family: 'iconfont'
+	font-size: 26px
+	display: inline-block
+	&.my_a::before
+		content: 'a'
+	&.my_b::before
+		content: 'b'
+	&.my_c::before
+		content: 'c'
+	&.my_d::before
+		content: 'd'
+	&.my_e::before
+		content: 'e'
+	&.my_f::before
+		content: 'f'
+	&.my_g::before
+		content: 'g'
+	&.my_h::before
+		content: 'h'
+	&.my_i::before
+		content: 'i'
+	&.my_j::before
+		content: 'j'
+	&.my_k::before
+		content: 'k'
+	&.my_l::before
+		content: 'l'
+	&.my_m::before
+		content: 'm'
+	&.my_n::before
+		content: 'n'
+	&.my_o::before
+		content: 'o'
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.top_line
+	height: 46px
+	background-color: #009F93
+	color: #fff
+	vertical-align: top
+	padding-top: 11px
+	text-transform: uppercase
+	font-size: 16px
+	span
+		margin-left: 50px
+	i
+		text-transform: none
+		font-size: 24px
+		line-height: 28px
+		vertical-align: top
+
+.menu_line
+	padding: 55px 0 60px
+	nav
+		display: inline-block
+		vertical-align: top
+		ul
+			list-style-type: none
+			margin-left: 85px
+			li
+				display: inline-block
+				margin-right: 40px
+				position: relative
+				a
+					text-transform: none
+					text-decoration: none
+					font-size: 24px
+					color: $grey
+					&:hover,
+					&.active
+						color: $green
+					&.active::after
+						content: ''
+						position: absolute
+						width: 32px
+						height: 3px
+						background-color: $green
+						top: 45px
+						left: 0	
+.bascket_wrap
+	display: inline-block
+	vertical-align: top
+	padding-top: 20px
+	line-height: 20px
+	position: relative
+	.b_num
+		width: 22px
+		height: 22px
+		content: ''
+		position: absolute
+		top: 0
+		right: 0
+		background-image: -webkit-linear-gradient(left,$green, $teal)
+		background-image: -o-linear-gradient(left,$green, $teal)
+		background-image: linear-gradient(to right,$green, $teal)
+		margin-right: -15px
+		border-radius: 50%
+		&::after
+			color: #fff
+			content: '2'
+			position: absolute
+			width: 20px
+			height: 20px
+			text-align: center
+			top: 2px
+			left: 2px
+			font-size: 14px
+	a
+		color: $grey
+	i
+		font-size: 40px
+.slider
+	background-image: url(../img/slider_bg.png)
+	background-size: cover
+	height: 531px
+	.pr_image
+		text-align: left
+		padding-top: 20px
+		img
+			height: 290px
+			width: 409px
+	.owl-carousel
+		.item
+			text-align: right
+			padding: 75px 0 60px 30px
+	h1
+		font-size: 70px
+		color: #fff
+		font-weight: bold
+		margin: 0
+		margin-bottom: 20px
+		line-height: 80px
+	small
+		color: #666
+		font-size: 24px
+		font-family: "Mon_thin", sans-serif
+		text-transform: uppercase
+	.h_line
+		width: 100%
+		height: 1px
+		background-image: -webkit-linear-gradient(left, transparent, rgba(0, 0,0, .3))
+		background-image: -o-linear-gradient(left, transparent, rgba(0, 0,0, .3))
+		background-image: linear-gradient(to right, transparent, rgba(0, 0,0, .3))
+	p
+		font-size: 20px
+		color: #fff
+		font-weight: 400
+		line-height: 26px
+		margin-bottom: 35px
+.button
+	display: inline-block
+	color: #fff
+	font-size: 24px
+	font-family: "Mon_light", sans-serif
+	padding: 15px 52px
+	border-radius: 35px
+	&.more
+		border: 2px solid #ffff
+	&.order
+		border: 0
+		margin-left: 35px
+		padding: 15px 32px
+		background-image: -webkit-linear-gradient(left, $green, $teal)
+		background-image: -o-linear-gradient(left, $green, $teal)
+		background-image: linear-gradient(to right, $green, $teal)
+		span
+			vertical-align: middle
+		i
+			font-size: 50px
+			line-height: 30px
+			vertical-align: middle
+.owl-dots
+	text-align: center
+.owl-dot
+	display: inline-block
+	margin-right: 10px
+	span
+		display: inline-block
+		width: 12px
+		height: 12px
+		border-radius: 50%
+		background-color: #e8e8e8
+.owl-dot.active
+	span
+		background-color: $green
+.tizers
+	position: relative
+	h2
+		margin-top: 20px
+		margin-bottom: 0
+	h2::before,
+		content: ''
+		position: absolute
+		height: 1px
+		width: 45%
+		background-color: #dcdcdc
+		left: 0
+		top: 20px
+	h2::after
+		content: ''
+		position: absolute
+		height: 1px
+		width: 45%
+		background-color: #dcdcdc
+		right: 0
+		top: 20px
+	.item
+		text-align: center
+		padding-top: 75px
+		h3
+			margin-top: 25px
+		p
+			margin-top: 5px
+			margin-bottom: 50px
+			font-size: 16px
+			line-height: 28px
+			padding: 0 30px
+	.item:nth-child(1)
+		background: url(../img/item_1.png) no-repeat center 35px
+	.item:nth-child(2)
+		background: url(../img/item_2.png) no-repeat center 46px
+	.item:nth-child(3)
+		background: url(../img/item_3.png) no-repeat center 40px
+.product
+	background: url(../img/product_bg.png) repeat-x center top
+	padding-top: 45px
+	h2
+		margin-top: 0
+		margin-bottom: 90px
+	h3
+		margin-top: 30px
+	.owl-item
+		display: inline-block
+		vertical-align: top
+	.item
+		text-align: center
+		a
+			text-decoration: none
+			display: inline-block
+			cursor: pointer
+			&:hover
+				color: #9fe54e
+		p
+			font-size: 16px
+			line-height: 27px
+			margin: 5px 20px 15px
+.button_wrap
+	background-image: linear-gradient(left, $green, $teal)
+	background-image: -ms-linear-gradient(left, $green, $teal)
+	border-radius: 50px
+	padding: 3px
+	display: inline-block
+.button3
+	cursor: pointer
+	display: inline-block
+	text-decoration: none
+	padding: 7px 22px 7px
+	color: $green
+	font-size: 18px
+	font-family: "Mon", sans-serif
+	text-transform: uppercase
+	background: #fff
+	border-radius: 50px
+
+.price
+	color: $teal
+	font-size: 24px
+	margin-bottom: 10px
+	.owl-dots
+		margin: 65px 0 60px
+		cursor: pointer
+		span
+			border: 1px solid #e5e5e5
+			background-color: #e8e8e8
+		.active
+			span
+				background-color: $grey
+.owl-stage-outer
+	position: relative
+	overflow: hidden
+.disabled
+	display: none
+.about
+	padding-top: 50px
+	border-top: 1px solid #dcdcdc
+	p
+		line-height: 26px
+	p+p
+		margin-top: 22px
+	p:last-child
+		margin-bottom: 0
+	h4
+		line-height: 20px
+.about_tizers
+	background-color: #F3F3F2
+	h2
+		margin: 50px 0
+	.img_wrap
+		i
+			font-size: 60px
+			color: $green
+			line-height: 60px
+	.tiz_wrap
+		margin-left: -20px
+		margin-bottom: 65px
+
+	p
+		margin: 0
+.healthy
+	bgc
+	margin-top: 50px
+	.right_col
+		p:last-child
+			border-bottom: 1px solid #000
+	h4
+		margin-top: 0
+		line-height: 24px
+	img
+		margin-left: -135px
+	p
+		line-height: 24px
+		margin-bottom: 30px
+	.wide_par
+		margin-top: 40px
+	.row
+		position: relative
+	.row::after
+		content: ''
+		position: absolute
+		width: 48%
+		height: 1px
+		bottom: -434px
+		right: 15px
+		background-color: #dcdcdc
+.reviews
+	position: relative
+	h2::before,
+		content: ''
+		position: absolute
+		height: 1px
+		width: 40%
+		background-color: #dcdcdc
+		left: 0
+		top: 20px
+	h2::after
+		content: ''
+		position: absolute
+		height: 1px
+		width: 40%
+		background-color: #dcdcdc
+		right: 0
+		top: 20px
+.reviews_wrap
+	background: url(../img/grass.png) 0 0 no-repeat
+	min-height: 653px
+	background-size: cover
+	.owl-item
+		vertical-align: top
+		display: inline-block
+		margin-top: 50px
+		position: relative
+	.item_txt
+		padding: 39px 34px 0 53px
+	.item
+		font-size: 16px
+		background-color: #fff
+		&::before
+			font-family: "iconfont"
+			color: $green
+			font-size: 32px
+			content: 'k'
+			width: 50px
+			height: 50px
+			position: absolute
+			top: 42px
+			left: 16px
+	.ho_line
+		text-align: right
+		padding-left: 10px
+		overflow: hidden
+	.sign
+		font-size: 16px
+		padding: 25px 0 30px 70px
+		color: $green
+		strong
+			display: block
+			color: $grey
+			font-weight: normal
+			font-size: 18px
+			&::before
+				content: '-'
+				position: absolute
+				left: 60px
+	.owl-dots
+		padding: 50px 0 45px
+		span
+			background-color: transparent
+			border: 2px solid #dcdcdc
+	.owl-dot.active
+		span
+			border: 2px solid transparent
+			background-color: #fff
+.glass
+	background: url(../img/glass.png) no-repeat  0 0
+	margin-right: -150px
+	height: 361px
+	&::after
+		border: 1px solid #dcdcdc
+		left: -98%
+		bottom: 0
+		position: absolute
+		content: ''
+		width: 95%
+.about_s_full
+	margin-top: 50px
+
+.about_s
+	margin-top: 50px
+
+.last_about
+	background-color: #f3f3f2
+	padding-top: 50px
+	padding-bottom: 30px
+footer
+	padding: 60px 0 15px
+	color: #fff
+	background-color: $teal
+	h4
+		margin-top: 20px
+		color: #fff
+		font-size: 24px
+	a
+		text-decoration: none
+		color: #fff
+		&:hover
+			text-decoration: underline
+			color: #dcdcdc
+	.contacts_wrap
+		font-size: 16px
+	.logo_wrap
+		font-size: 12px
+		p
+			margin: 35px 0 30px
+	i.my
+		font-size: 44px
+		line-height: 44px
+	.copy
+		text-align: center
+		font-size: 10px
+.copy
+	padding-top: 15px
+	border-top: 1px solid #42b1a9
+.bd_bottom
+	p:last-child
+		margin-bottom: 55px
+
+// category styles
+.breadcrumbs
+	font-family: "Mon_thin", sans-serif
+	margin-top: 35px
+	margin-bottom: 55px
+	a
+		text-decoration: none
+		&:hover
+			text-decoration: underline
+	span+span::before
+		content: "\00a0/\00a0"
+		left: -5px
+		position: relative
+	span+span
+		margin-left: 5px
+
+
+.category_description
+	background: url(../img/product_bg.png) repeat-x top left
+	padding-bottom: 45px
+	p:last-child
+		margin-bottom: 0
+
+	h1
+		color: #4d4d4d
+		font-size: 36px
+		font-family: "Mon", sans-serif
+		font-weight: bold
+		margin-top: 0
+		line-height: 36px
+		margin-bottom: 80px
+		&::before
+			content: ' '
+			position: absolute
+			width: 50px
+			height: 5px
+			background-color: $green
+			bottom: -40px
+	.head_wrap
+		position: relative
+	.image_wrap
+		float: right
+		margin-left: 20px
+
+.main_content
+	border-top: 1px solid #dcdcdc
+	padding-top: 70px
+.product_item
+	text-align: center
+	padding-top: 25px
+	margin-bottom: 70px
+	h3
+		margin: 0
+		padding: 0
+	p
+		margin-top: 0
+		line-height: 26px
+	.button_wrap
+		padding: 2px
+	.button3
+		padding: 1px 15px
+		font-size: 16px
+.brd_bottom
+	border-bottom: 1px solid #dcdcdc
+	margin-bottom: 45px
+.pages
+	margin-top: 20px
+	text-align: center
+	line-height: 28px
+	vertical-align: middle
+	span
+		line-height: 28px
+		vertical-align: middle
+	.left_arrow
+		margin-right: 20px
+	.right_arrow
+		margin-left: 20px
+	strong
+		font-weight: normal
+	.num_wrap
+		margin: 5px
+		display: inline-block
+		border-radius: 4px
+		padding: 3px
+		background-image: -webkit-linear-gradient(left, $green, $teal)
+		background-image: -o-linear-gradient(left, $green, $teal)
+		background-image: -ms-linear-gradient(left, $green, $teal)
+		background-image: linear-gradient(to right, $green, $teal)
+	.num
+		line-height: 20px
+		background-color: #fff
+		display: inline-block
+		border-radius: 2px
+		padding: 10px 14px
+aside
+	ul
+		margin: 0
+		padding: 0
+		list-style-type: none
+		margin-top: 20px
+		padding-bottom: 15px
+		margin-right: 30px
+		li
+			margin-bottom: 15px
+
+
+//checkbox
+/* Base for label styling */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked 
+	display: none
+
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label 
+	position: relative
+	padding-left: 25px
+	cursor: pointer
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before 
+	content: ''
+	position: absolute
+	left: 0
+	top: -2px
+	width: 17px
+	height: 17px
+	background-image: url(../img/checkbox.png)
+
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after 
+	content: '\00a0'
+	position: absolute
+	top: -2px
+	left: 0
+	background-image: url(../img/checkbox_checked.png)
+	height: 17px
+	width: 17px
+	transition: all .2s
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after 
+	opacity: 0
+	transform: scale(0)
+
+[type="checkbox"]:checked + label:after 
+	opacity: 1
+	transform: scale(1)
+
+
+//Ion range slider plugin 
+.irs-bar, .irs-bar-edge, .irs-line-left, .irs-line-mid, .irs-line-right, .irs-slider
+	background: $bg_grey
+.irs-bar
+	border-radius: 50px
+	background-image: -webkit-linear-gradient(left,$green, $teal)
+	background-image: -o-linear-gradient(left,$green, $teal)
+	background-image: -ms-linear-gradient(left,$green, $teal)
+	background-image: linear-gradient(to right, $green, $teal)
+.irs-slider
+	opacity: 0
+	height: 12px
+	margin-top: 3px
+.irs-line-left, .irs-line-right
+	border-radius: 50px
+.irs-from, .irs-to
+	background-color: #fff
+	color: $grey
+	border: 1px solid $teal
+	padding: 3px 7px
+	padding-bottom: 2px
+	top: 52px
+	&::after
+		display: none
+.slider_wrap
+	height: 20px
+	weight: 40px
+.price_wrap
+	margin-right: 40px
+	text-align: center
+	h3
+		text-align: left
+	.button
+		font-size: 20px
+		margin-top: 55px
+		margin-bottom: 80px
+		text-align: center
+		border: none
+		background-image: -webkit-linear-gradient(left, $green, $teal)
+		background-image: -o-linear-gradient(left, $green, $teal)
+		background-image: -ms-linear-gradient(left, $green, $teal)
+		background-image: linear-gradient(to right, $green, $teal)
+aside
+	article
+		border-bottom: 1px solid $bg_grey
+		margin-right: 40px
+	h3:last-child
+		margin-bottom: 20px
+	li
+		a
+			text-decoration: none
+			color: $grey
+			&:hover
+				text-decoration: underline
+				color: $bg_grey
+.side_banner
+	margin-bottom: 45px
+.main_content
+	article
+		border-bottom: 1px solid $bg_grey
+		position: relative
+		margin-bottom: 40px
+		h2
+			text-align: left
+			&::after
+				content: ''
+				position: absolute
+				width: 40px
+				height: 3px
+				background-color: $green
+				left: 0
+				bottom: -2px
+.owl-carousel-4
+	margin-bottom: 84px
+	.owl-item
+		display: inline-block
+		color: #000
+	.owl-dot
+		padding-top: 40px
+		span
+			background-color: #e8e8e8
+			border-color: #dcdcdc
+		&.active
+			span
+				background-color: #8f8f8f
+	.item
+		cursor: pointer
+		img
+			width: 100%
+		p
+			background-color: $teal
+			color: #fff
+			padding: 20px 5px 15px
+			margin: 0
+			text-align: center
+			&:hover
+				text-decoration: underline
+.head_wrp
+	position: relative
+article
+	h2
+		text-align: left
+		border-bottom: 1px solid $bg_grey
+		padding-bottom: 25px
+.owl-item
+	display: inline-block
+.owl-carousel-5
+	.owl-dots.disabled
+		display: block
+	.owl-nav.disabled
+		display: initial
+	.owl-nav
+		

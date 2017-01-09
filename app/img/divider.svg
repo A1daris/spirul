@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 324.9054 21.237354"
+   height="21.237354"
+   width="324.9054"
+   version="1.1"
+   id="svg4136">
+  <metadata
+     id="metadata4142">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs4140" />
+  <path
+     id="path4146"
+     d="M 37.954133,1.382862 0,1.445952 0.05311292,0 38.762925,0.02751 C 44.131174,6.428074 49.210136,12.531234 54.578393,18.931792 60.569797,12.812581 66.382452,6.133294 71.140744,0.033724 l 199.669346,0.0087 0.0953,1.226156 L 71.786003,1.29643 C 66.226148,8.200139 60.350433,14.70333 54.493663,21.237354 49.007957,14.345739 43.740456,7.904164 37.954167,1.382843 Z"
+     style="fill:#b3b3b3" />
+</svg>
