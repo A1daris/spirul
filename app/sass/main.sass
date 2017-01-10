@@ -67,6 +67,8 @@ h5
 	font-weight: bold
 	font-size: 14px
 
+.nopadd
+	padding: 0
 
 i
 	font-style: normal
@@ -299,7 +301,7 @@ i
 		background: url(../img/item_3.png) no-repeat center 40px
 .product
 	background: url(../img/product_bg.png) repeat-x center top
-	padding-top: 45px
+	padding: 45px 0
 	h2
 		margin-top: 0
 		margin-bottom: 90px
@@ -379,15 +381,15 @@ i
 	.tiz_wrap
 		margin-left: -20px
 		margin-bottom: 65px
-
 	p
 		margin: 0
+
 .healthy
-	bgc
 	margin-top: 50px
 	.right_col
 		p:last-child
-			border-bottom: 1px solid #000
+			padding-bottom: 30px
+			border-bottom: 1px solid #dcdcdc
 	h4
 		margin-top: 0
 		line-height: 24px
@@ -398,16 +400,7 @@ i
 		margin-bottom: 30px
 	.wide_par
 		margin-top: 40px
-	.row
-		position: relative
-	.row::after
-		content: ''
-		position: absolute
-		width: 48%
-		height: 1px
-		bottom: -434px
-		right: 15px
-		background-color: #dcdcdc
+
 .reviews
 	position: relative
 	h2::before,
@@ -480,15 +473,9 @@ i
 	background: url(../img/glass.png) no-repeat  0 0
 	margin-right: -150px
 	height: 361px
-	&::after
-		border: 1px solid #dcdcdc
-		left: -98%
-		bottom: 0
-		position: absolute
-		content: ''
-		width: 95%
+
 .about_s_full
-	margin-top: 50px
+	margin-top: 40px
 
 .about_s
 	margin-top: 50px
@@ -527,8 +514,11 @@ footer
 	padding-top: 15px
 	border-top: 1px solid #42b1a9
 .bd_bottom
+	padding-bottom: 35px
+.bd_bottom .col-md-6
 	p:last-child
-		margin-bottom: 55px
+		padding-bottom: 28px
+		border-bottom: 1px solid #dcdcdc
 
 // category styles
 .breadcrumbs
@@ -549,7 +539,6 @@ footer
 
 .category_description
 	background: url(../img/product_bg.png) repeat-x top left
-	padding-bottom: 45px
 	p:last-child
 		margin-bottom: 0
 
@@ -704,8 +693,8 @@ aside
 	&::after
 		display: none
 .slider_wrap
-	height: 20px
-	weight: 40px
+	height: 120px
+	
 .price_wrap
 	margin-right: 40px
 	text-align: center
@@ -778,10 +767,11 @@ aside
 				text-decoration: underline
 .head_wrp
 	position: relative
+.head_wrp + p
+	padding-right: 10px
 article
 	h2
 		text-align: left
-		border-bottom: 1px solid $bg_grey
 		padding-bottom: 25px
 .owl-item
 	display: inline-block
@@ -791,4 +781,63 @@ article
 	.owl-nav.disabled
 		display: initial
 	.owl-nav
-		
+
+.products
+	border-top: 1px solid $bg_grey
+.prod_list
+	h2
+		border-bottom: 1px solid $bg_grey
+		&::after
+			display: none
+	.owl-next,
+	.owl-prev
+		width: 21px
+		height: 39px
+		position: absolute
+		top: 150px
+	.owl-prev
+		left: 0
+		background: url(../img/car_arrows.png) 0 0 no-repeat
+	.owl-next
+		right: 0
+		background: url(../img/car_arrows.png) -21px 0 no-repeat
+.carousel_wrap
+	position: relative
+	padding: 0 30px
+	.product_item
+		h3
+			line-height: 28px
+			margin-top: 10px
+			margin-bottom: 15px
+		p
+			font-size: 12px
+			line-height: 20px
+		img
+			width: 100%
+.img_block
+	p
+		margin-top: 0
+	// img
+	// 	float: left
+	// 	margin: 5px 15px 0 0
+.img_wrap
+	position: relative
+	display: inline-block
+	float: left
+	margin-right: 10px
+	span
+		position: absolute
+		bottom: 0
+		width: 100%
+		text-align: center
+		font-size: 16px
+		padding: 5px 0
+		line-height: 26px
+		color: #fff
+		display: block
+		background-color: $teal
+		transition: all ease 0.5s
+		&:hover
+			background-color: transparent
+.container.main_content
+	padding-top: 0

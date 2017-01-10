@@ -45,7 +45,8 @@ $('document').ready(function() {
     nav: true,
     loop: true,
     margin: 28,
-    items: 1,
+    items: 4,
+    dots: false,
     navText: ["&#32;","&#32;"]
     
     });
