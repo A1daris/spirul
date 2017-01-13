@@ -1,4 +1,10 @@
 $('document').ready(function() {
+    //tabs
+    $(".tab_item").not(":first").hide();
+    $(".wrapper .tab").click(function() {
+        $(".wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
+        $(".tab_item").hide().eq($(this).index()).show()
+    }).eq(0).addClass("active");
 
 	// Owl carousel plugin https://owlcarousel2.github.io/OwlCarousel2/docs/started-welcome.html
   $('.owl-carousel').owlCarousel({

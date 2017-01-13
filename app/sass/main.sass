@@ -106,6 +106,10 @@ i
 		content: 'n'
 	&.my_o::before
 		content: 'o'
+	&.my_p::before
+		content: 'p'
+	&.my_q::before
+		content: 'q'
 .img-responsive
 	display: block
 	max-width: 100%
@@ -525,6 +529,7 @@ footer
 	font-family: "Mon_thin", sans-serif
 	margin-top: 35px
 	margin-bottom: 55px
+	font-size: 14px
 	a
 		text-decoration: none
 		&:hover
@@ -785,6 +790,7 @@ article
 .products
 	border-top: 1px solid $bg_grey
 .prod_list
+	position: relative
 	h2
 		border-bottom: 1px solid $bg_grey
 		&::after
@@ -841,3 +847,226 @@ article
 			background-color: transparent
 .container.main_content
 	padding-top: 0
+.product.main_content
+	padding-top: 0
+.product_thumbs
+	text-align: center
+	margin-top: 20px
+	position: relative
+	&::before,
+	&::after
+		cursor: pointer
+		content: ''
+		position: absolute
+		background: url(../img/arrows_p.png)
+		height: 21px
+		width: 12px
+	&::before
+		top: 15px
+		left: 40px
+	&::after
+		right: 60px
+		top: 15px
+		background-position: -12px 0
+	div
+		margin-right: 15px
+		display: inline-block
+		border: 3px solid $bg_grey
+		border-radius: 50%
+		height: 50px
+		width: 50px
+		text-align: center
+		vertical-align: top
+		padding-top: 5px
+		img
+			height: 35px
+		.active
+			height: 50px
+			width: 50px
+			border-radius: 50%
+			display: block
+			border: 3px solid $green
+			position: relative
+			top: -44px
+			left: -3px
+			opacity: 0.7
+			background-image: -webkit-linear-gradient(left, $teal, $green)
+			background-image: -o-linear-gradient(left, $teal, $green)
+			background-image: linear-gradient(to right, $teal, $green)
+.product_image
+	margin-top: 30px
+.product
+	font-size: 12px
+	.description
+		margin-left: 10px
+		h1
+			font-size: 60px
+			font-family: "Mon", sans-serif
+			font-weight: bold
+			color: #4c4c4c
+			padding-bottom: 15px
+			border-bottom: 1px solid $bg_grey
+			margin-bottom: 0
+			margin-top: 0
+			line-height: 90px
+		.line
+			font-family: "Mon_thin", sans-serif
+			font-size: 20px
+			text-transform: uppercase
+			vertical-align: top
+			line-height: 20px
+			margin-bottom: 20px
+			img
+				float: right
+				height: 23px
+				width: auto
+		.pages
+			margin-top: 30px
+			text-align: left
+			.left_arrow
+				margin-left: 30px
+			.order
+				margin-left: 0
+				font-size: 16px
+				font-weight: bold
+				padding: 10px 20px 
+				text-transform: uppercase
+				float: right
+				position: relative
+				cursor: pointer
+				transition: all ease 0.25s
+				&:hover
+					top: 2px
+				&::after
+					content: ''
+					width: 193px
+					height: 41px
+					background: url(../img/buy_shadow.png) 0 0 no-repeat
+					position: absolute
+					left: 0
+					bottom: -40px
+				i
+					text-transform: none
+					font-weight: normal
+		.price
+			padding: 18px 0
+			border-bottom: 1px solid $bg_grey
+			font-size: 38px
+			.removed
+				margin-right: 70px
+				color: #ccc
+				text-decoration: line-through
+	.rating
+		margin-top: 45px
+		vertical-align: top
+		.stars
+			display: inline-block
+			position: relative
+			margin-left: 10px
+			top: 4px
+			cursor: pointer
+		.reviews
+			cursor: pointer
+			color: $green
+			vertical-align: top
+			line-height: 38px
+			i
+				font-size: 36px
+				line-height: 40px
+				margin-right: 5px
+.rev_wrap
+	display: inline-block
+	float: right
+	position: relative
+	top: -3px
+	span+span
+		margin-left: 10px
+.product_tabs
+	margin-top: 50px
+.tabs
+	.tab
+		cursor: pointer
+		color: $green
+		font-size: 18px
+		font-family: "Mon_light", sans-serif
+		margin-right: 40px
+		padding-bottom: 20px
+		&.active
+			border-bottom: 3px solid $green
+.tab_content
+	border-top: 1px solid $bg_grey
+	margin-top: 16px
+	padding-top: 20px
+	p:first-child
+		margin: 0
+.item_tiz
+	padding-top: 70px
+	background: #fff url(../img/product_bg.png) 0 0 repeat-x
+	border-bottom: 1px solid $bg_grey
+	padding-bottom: 50px
+.tb
+	margin: 30px auto
+	text-align: center
+	vertical-align: middle
+	display: table
+	font-size: 18px
+	border-collapse: collapse
+	border-spacing: 0
+.tr
+	display: table-row
+.tc
+	width: 30%
+	vertical-align: middle
+	padding: 10px
+	display: table-cell
+	border: 1px solid $green
+	&:last-child
+		margin-right: 10px
+.th
+	color: #fff
+	text-transform: uppercase
+	background-color: $green
+	.tc:first-child
+		border: 0
+		border-color: #fff
+		border-top-left-radius: 25px
+	.tc:nth-child(2)
+		border: 1px solid #fff
+		border-top: 0
+		border-bottom: 0
+	.tc:last-child
+		border: 0
+		border-top-right-radius: 25px
+.tr:last-child
+	.tc:first-child
+		color: red
+		border-bottom-left-radius: 25px
+		-webkit-border-bottom-left-radius: 25px
+.prod::after
+	content: ''
+	height: 3px
+	width: 40px
+	position: absolute
+	left: 0
+	background-color: $green
+	top: 65px
+.contact
+	input,
+	label,
+	textarea
+		text-indent: 10px
+		line-height: 34px
+		display: block
+	label
+		font-size: 18px
+	input
+		color: grey
+		margin-bottom: 20px
+	button.button
+		padding: 5px 25px
+		border: 0
+		font-size: 20px
+		margin: 20px 0 40px
+		background-image: -webkit-linear-gradient(left, $green, $teal)
+		background-image: -o-linear-gradient(left, $green, $teal)
+		background-image: linear-gradient(to right, $green, $teal)
