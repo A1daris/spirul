@@ -27,16 +27,41 @@ $('document').ready(function() {
   $('.owl-carousel-2').owlCarousel({
     loop:true,
     margin:10,
-    items:3,
-    nav:false
-    
-	});
+    nav:false,
+    responsive:{
+    0:{
+        items:1
+    },
+    600:{
+        items:1
+    },
+    700:{
+        items:3
+    },
+    1000:{
+        items:3
+    }
+    }
+   });
   
     // Owl carousel plugin https://owlcarousel2.github.io/OwlCarousel2/docs/started-welcome.html
   $('.owl-carousel-3').owlCarousel({
     loop:true,
     margin:28,
-    items:3,
+    responsive:{
+    0:{
+        items:1
+    },
+    480:{
+        items:1
+    },
+    760:{
+        items:3
+    },
+    1000:{
+        items:3
+    }
+    },
     nav:false
     
 	});

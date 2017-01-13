@@ -5,27 +5,131 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
+	.menu_line
+		nav
+			ul
+				margin-top: 0
+				margin-bottom: 0
+		img
+			width: 250px
+
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
+	h2::after,
+	h2::before
+		display: none;
+	.item_txt
+		font-size: 14px;
+	.tizers .item
+		p
+			font-size: 14px;
+			line-height: 18px;
+			padding: 0;
+	.tizers h2::after, .tizers h2::before
+		display: none;
+	.slider
+		height: auto;
+	.slider .pr_image img 
+		margin-left: -40px;
+	.slider p
+		font-size: 14px;
+	.top_line
+		span
+			font-size: 12px
+			margin-left: 15px;
+	.menu_line
+		padding: 35px 0
+		nav
+			ul
+				margin-top: 5px
+				li
+					margin-right: 20px
+					a
+						font-size: 18px;
+		img
+			width: 200px
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
-
+	.reviews_wrap
+		min-height: auto;
+	.ho_line
+		display: none;
+	.product .item p
+		font-size: 14px;
+	.tizers .item
+		p
+			padding: 0 30px
+			margin-bottom: 0;
+			&:last-child
+				margin-bottom: 20px;
+	.slider
+		height: auto;
+	.slider .owl-carousel .item
+		padding-top: 20px;
+		text-align: center;
+		p
+			color: $teal;
+	.slider .pr_image img 
+		margin: 0 auto
+	.menu_line
+		nav
+			ul
+				margin-left: 20px;
+@media only screen and (max-width : 620px)
+	.menu_line
+		img
+			display: block;
+			margin: 0 auto	
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
-
+	.slider .pr_image img 
+		width: 250px;
+		height: auto;
+	.button.more,
+	.button.order
+		display: block;
+		margin: 0 auto
+		margin-top: 10px;
+	.full_spec
+		display: none;
+	.short_spec
+		display: inline;
+	.menu_line nav ul li a.active::after
+		top: 22px
+	.top_line
+		height: 70px;
+		padding: 5px 20px
+		span
+			font-size: 10px
+	.menu_line
+		padding-bottom: 15px;
+		img
+			display: block;
+			margin: 0 auto
+		nav
+			ul
+				li
+					margin-right: 10px;
+					a
+						font-size: 13px;
+	.bascket_wrap
+		margin: 5px auto
+		float: none
+		display: block
+		width: 30px;
+		text-align: center;
+		i
+			font-size: 25px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
-	/**/
+	.right_col h4
+		margin-top: 20px;
 
 
 /*==========  Mobile First  ==========*/
