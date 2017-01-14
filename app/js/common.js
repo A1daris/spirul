@@ -68,7 +68,20 @@ $('document').ready(function() {
     $('.owl-carousel-4').owlCarousel({
     loop:true,
     margin:28,
-    items:4,
+    responsive:{
+    0:{
+        items:1
+    },
+    480:{
+        items:1
+    },
+    760:{
+        items:4
+    },
+    1000:{
+        items:4
+    }
+    },
     nav:false
     
     });
@@ -76,7 +89,20 @@ $('document').ready(function() {
     nav: true,
     loop: true,
     margin: 28,
-    items: 4,
+        responsive:{
+    0:{
+        items:1
+    },
+    480:{
+        items:1
+    },
+    760:{
+        items:4
+    },
+    1000:{
+        items:4
+    }
+    },
     dots: false,
     navText: ["&#32;","&#32;"]
     

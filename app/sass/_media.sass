@@ -17,6 +17,13 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
+	aside
+		img
+			max-width: 140px;
+		article
+			margin-right: 10px;
+		label
+			font-size: 12px;
 	h2::after,
 	h2::before
 		display: none;
@@ -54,6 +61,7 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
+
 	.reviews_wrap
 		min-height: auto;
 	.ho_line
@@ -80,6 +88,17 @@
 			ul
 				margin-left: 20px;
 @media only screen and (max-width : 620px)
+	.category_description p
+		font-size: 12px
+		padding: 0 15px
+	.breadcrumbs
+		margin-bottom: 20px
+	.category_description .image_wrap
+		float: none;
+		margin-bottom: 20px;
+		display: block;
+		text-align: center;
+		margin-top: 0;
 	.menu_line
 		img
 			display: block;
@@ -87,6 +106,12 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+	.main_content
+		padding-top: 20px;
+	.category_description .image_wrap
+		img
+			width: 260px;
+			height: auto;
 	.slider .pr_image img 
 		width: 250px;
 		height: auto;
